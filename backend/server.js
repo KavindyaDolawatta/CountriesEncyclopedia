@@ -15,6 +15,10 @@ app.use(express.json());
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/user", require("./routes/favorites"));
 
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
+
 // Only connect & listen if not in test environment
 if (process.env.NODE_ENV !== "test") {
   mongoose
