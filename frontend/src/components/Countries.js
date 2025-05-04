@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Article from './Article';
-import { Search, MapPin, Heart, X, ChevronDown, Loader2 } from 'lucide-react';
+import { Search, Heart, X, ChevronDown, Loader2 } from 'lucide-react';
 
 export default function Countries({ favorites = [], setFavorites }) {
     const [countries, setCountries] = useState([]);
